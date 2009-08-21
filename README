@@ -1,0 +1,18 @@
+== GeoKit GeoIP Provider
+
+=== Install
+gem install DefV-geokit-geoip-provider
+
+=== Setup
+
+==== Rails
+config.gem 'DefV-geokit-geoip-provider', :lib => 'geokit-geoip-provider'
+
+Download and unzip a recent GeoCity database from http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+
+Add GeoIp as a ip_address provider:
+
+GeoKit::Geocoders.ip_provider_order.unshift :geo_ip
+GeoKit::Geocoders.geo_ip_database = RAILS_ROOT + "/lib/ext/GeoLiteCity.dat" # or the path you downloaded your geocity database
+
+And you can start using the GeoIp geocoder
