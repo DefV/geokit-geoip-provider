@@ -23,7 +23,7 @@ module Geokit
         res.zip = postal
         res.lat = latitude
         res.lng = longitude
-        res.success = !!(longitude && latitude)
+        res.success = !!(res.lat && res.lng)
         res
       end
     end

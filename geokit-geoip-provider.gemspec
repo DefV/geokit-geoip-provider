@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
     s.platform  =   Gem::Platform::RUBY
     s.name      =   "geokit-geoip-provider"
-    s.version   =   "0.2"
+    s.version   =   "0.2.1"
     s.author    =   "Jan De Poorter"
     s.email     =   "geokit@defv.be"
     s.homepage   =   "http://workswithruby.com"
