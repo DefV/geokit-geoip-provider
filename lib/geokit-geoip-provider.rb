@@ -19,6 +19,7 @@ module Geokit
         
         res = GeoLoc.new
         res.city = city
+        res.state = region
         res.country_code = country_code
         res.zip = postal
         res.lat = latitude
